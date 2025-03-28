@@ -4,6 +4,6 @@
   </div>
 </template>
 
-<script setup>
-import '@/assets/css/tailwind.css'
-</script>
+<style>
+@import './assets/css/tailwind.css';
+</style>
