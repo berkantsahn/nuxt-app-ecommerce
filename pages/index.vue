@@ -1,18 +1,22 @@
 <template>
-  <div class="container py-10">
-    <h1 class="text-4xl font-bold text-center mb-8">Nuxt3 E-Ticaret</h1>
-    <div class="bg-white p-6 rounded-lg shadow-md">
-      <p class="text-lg text-center mb-4">
-        Hoş geldiniz! Bu Nuxt3, TailwindCSS ve NuxtImg ile oluşturulmuş bir e-ticaret uygulamasıdır.
-      </p>
-      <div class="flex justify-center">
-        <img src="https://placehold.co/600x400" alt="Örnek Resim" class="rounded-lg" />
-      </div>
+  <div>
+    <Menu />
+    <Navbar />
+    <HomePhotoSection />
+    <PopularCategories />
+    <div class="container mx-auto px-4 py-10">
+      <h1 class="text-3xl font-bold text-center">Foodzy E-Ticaret</h1>
+      <p class="text-center mt-4 text-gray-600">Navbar üzerinden siteyi geliştirmeye devam edeceğiz.</p>
     </div>
   </div>
 </template>
 
 <script setup>
+import Menu from '../components/Menu.vue'
+import Navbar from '../components/Navbar.vue'
+import HomePhotoSection from '../components/HomePhotoSection.vue'
+import PopularCategories from '../components/PopularCategories.vue'
+
 definePageMeta({
   title: 'Ana Sayfa'
 })
