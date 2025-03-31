@@ -1,4 +1,9 @@
 export const dailyBestSellsData = {
+  categories: [
+    { id: 1, name: 'Featured', isActive: true },
+    { id: 2, name: 'Popular', isActive: false },
+    { id: 3, name: 'New added', isActive: false }
+  ],
   featuredProduct: {
     image: new URL('~/assets/images/banner-best-sells.png', import.meta.url).href,
     alt: 'Featured Product'

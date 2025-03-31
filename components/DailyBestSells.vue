@@ -1,7 +1,18 @@
 <template>
   <section class="daily-best-sells">
-    <div class="section-header">
+    <div class="section-top">
       <h2 class="section-title">Daily Best Sells</h2>
+      <div class="category-tabs">
+        <button 
+          v-for="category in categories" 
+          :key="category.id" 
+          class="tab-button"
+          :class="{ 'active': category.isActive }"
+          @click="changeCategory(category.id)"
+        >
+          {{ category.name }}
+        </button>
+      </div>
     </div>
 
     <div class="products-container">
@@ -74,7 +85,15 @@ import { ref, onMounted, onUnmounted } from 'vue'
 import '../assets/css/dailyBestSells.css'
 import { dailyBestSellsData } from '~/assets/datas/dailyBestSells'
 
-const { featuredProduct, products } = dailyBestSellsData
+const { featuredProduct, products, categories: initialCategories } = dailyBestSellsData
+const categories = ref(initialCategories)
+
+const changeCategory = (categoryId) => {
+  categories.value = categories.value.map(category => ({
+    ...category,
+    isActive: category.id === categoryId
+  }))
+}
 
 const scrollContainer = ref(null)
 const isAtStart = ref(true)
