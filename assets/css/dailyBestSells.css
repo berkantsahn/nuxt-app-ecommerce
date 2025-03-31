@@ -1,0 +1,251 @@
+.daily-best-sells {
+  @apply py-8 md:py-16 bg-gray-50 max-w-[1400px] mx-auto;
+}
+
+.section-header {
+  @apply mb-6 md:mb-12 px-4 md:px-0
+}
+
+.section-subtitle {
+  @apply text-red-500 font-semibold text-sm tracking-wider mb-2;
+}
+
+.section-title {
+  @apply text-2xl md:text-3xl font-bold text-gray-900;
+}
+
+.products-container {
+  @apply flex flex-col md:flex-row gap-4 max-w-[1400px] mx-auto px-2 md:px-4;
+}
+
+/* Öne Çıkan Ürün Kartı */
+.featured-product-card {
+  @apply bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex-none w-full md:w-[280px] h-[300px] md:h-[524px];
+}
+
+.featured-product-image-container {
+  @apply relative w-full h-[300px] md:h-[524px];
+}
+
+.featured-product-image {
+  @apply w-full h-full object-cover;
+}
+
+.featured-product-discount {
+  @apply absolute top-4 right-4 bg-red-500 text-white text-sm font-semibold px-3 py-1.5 rounded z-10;
+}
+
+.featured-product-info {
+  @apply absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent text-white;
+}
+
+.featured-product-name {
+  @apply text-white font-medium text-lg mb-3 line-clamp-2;
+}
+
+.featured-product-price-container {
+  @apply flex items-center gap-3 mb-3;
+}
+
+.featured-product-price {
+  @apply text-white font-bold text-2xl;
+}
+
+.featured-product-original-price {
+  @apply text-gray-200 text-lg line-through;
+}
+
+.featured-product-rating {
+  @apply flex items-center gap-2 text-white;
+}
+
+/* Ürün Grid */
+.products-grid {
+  @apply flex-1 relative px-2 md:px-2 overflow-hidden;
+}
+
+.products-scroll {
+  @apply flex gap-2 md:gap-3 overflow-x-auto;
+  margin: 0 auto;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-snap-type: x mandatory;
+  padding: 0 4px;
+}
+
+.products-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Scroll Buttons */
+.scroll-button {
+  @apply absolute top-1/2 -translate-y-1/2 bg-white rounded-full p-2 shadow-md z-50 text-gray-600 hover:text-gray-900 hover:bg-gray-50 transition-all duration-200;
+}
+
+.scroll-button.left {
+  @apply -left-4 ml-6;
+}
+
+.scroll-button.right {
+  @apply -right-4 mr-6;
+}
+
+.scroll-button.hidden {
+  display: none;
+}
+
+.product-card {
+  @apply bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex-none relative;
+  width: 280px;
+  min-width: 280px;
+  max-width: 280px;
+  scroll-snap-align: start;
+}
+
+.best-sale-tag {
+  @apply absolute top-0 left-0 bg-red-500 text-white text-sm font-medium px-4 py-1.5 z-10;
+  border-radius: 15px 0px 15px;
+}
+
+.product-image-container {
+  @apply relative w-full h-[200px] md:h-[280px] overflow-hidden;
+}
+
+.product-image {
+  @apply w-full h-full object-cover;
+}
+
+.product-discount {
+  @apply absolute top-2 right-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded;
+}
+
+.product-info {
+  @apply p-3 md:p-4;
+}
+
+.product-brand {
+  @apply text-gray-500 text-sm mb-1;
+}
+
+.product-name {
+  @apply text-gray-900 font-medium text-sm md:text-base mb-2 line-clamp-2;
+}
+
+.product-price-container {
+  @apply flex items-center gap-2 mb-3;
+}
+
+.product-price {
+  @apply text-[#3BB77E] font-bold text-lg md:text-xl;
+}
+
+.product-original-price {
+  @apply text-gray-400 text-sm line-through;
+}
+
+.product-rating {
+  @apply flex items-center gap-1 mb-3;
+}
+
+.stars {
+  @apply flex;
+}
+
+.product-progress {
+  @apply mb-4;
+}
+
+.progress-text {
+  @apply text-sm text-gray-600 mb-1;
+}
+
+.progress-bar {
+  @apply w-full h-2 bg-gray-200 rounded-full overflow-hidden;
+}
+
+.progress-fill {
+  @apply h-full bg-[#3BB77E] rounded-full transition-all duration-300;
+}
+
+.add-to-cart-btn {
+  @apply w-full bg-red-500 hover:bg-red-600 text-white font-medium py-1.5 md:py-2 px-3 md:px-4 rounded-full transition-colors duration-300 text-sm md:text-base;
+}
+
+@media (max-width: 768px) {
+  .products-container {
+    @apply gap-4;
+  }
+  
+  .featured-product-card {
+    @apply w-full h-[300px];
+  }
+  
+  .featured-product-image-container {
+    @apply h-[300px];
+  }
+
+  .products-grid {
+    @apply px-0;
+  }
+
+  .products-scroll {
+    width: 100%;
+    padding: 0 4px;
+  }
+
+  .scroll-button {
+    display: none;
+  }
+
+  .product-card {
+    width: 280px;
+    min-width: 280px;
+    max-width: 280px;
+  }
+
+  .product-image-container {
+    @apply h-[200px];
+  }
+}
+
+@media (max-width: 480px) {
+  .daily-best-sells {
+    @apply py-6;
+  }
+
+  .section-header {
+    @apply mb-4;
+  }
+
+  .section-title {
+    @apply text-xl;
+  }
+
+  .product-card {
+    width: 240px;
+    min-width: 240px;
+    max-width: 240px;
+  }
+
+  .product-image-container {
+    @apply h-[180px];
+  }
+
+  .product-info {
+    @apply p-2;
+  }
+
+  .product-name {
+    @apply text-sm;
+  }
+
+  .product-price {
+    @apply text-base;
+  }
+
+  .add-to-cart-btn {
+    @apply py-1 px-2 text-sm;
+  }
+} 

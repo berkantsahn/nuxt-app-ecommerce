@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-import '@/assets/css/popularCategories.css'
+import '../assets/css/popularCategories.css'
 
 defineProps({
   categories: {
@@ -27,7 +27,3 @@ defineProps({
   }
 })
 </script>
-
-<style scoped>
-/* CSS kodları artık assets/css/popularCategories.css dosyasında */
-</style> 

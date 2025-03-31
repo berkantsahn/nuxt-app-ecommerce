@@ -1,108 +1,50 @@
 .popular-categories {
-  padding: 60px 20px;
-  background-color: #f8f9fa;
+  @apply py-8 md:py-16 bg-gray-50 max-w-[1400px] mx-auto;
 }
 
 .section-header {
-  text-align: center;
-  margin-bottom: 40px;
+  @apply mb-6 md:mb-12 px-4 md:px-0 text-center;
 }
 
 .section-title {
-  font-size: 32px;
-  font-weight: 700;
-  color: #333;
-  margin-top: 8px;
+  @apply text-2xl md:text-3xl font-bold text-gray-900 mt-2;
 }
 
 .section-subtitle {
-  font-size: 16px;
-  color: #ff0000;
-  font-weight: 600;
-  letter-spacing: 1px;
+  @apply text-red-500 font-semibold text-sm tracking-wider mb-2;
 }
 
 .categories-grid {
-  display: grid;
+  @apply grid gap-4 max-w-[1400px] mx-auto px-2 md:px-4;
   grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .category-card {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  text-align: center;
-  cursor: pointer;
+  @apply bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center p-5 text-center cursor-pointer;
 }
 
 .category-card:hover {
-  transform: translateY(-5px);
+  @apply -translate-y-1 shadow-2xl;
 }
 
 .category-icon {
-  width: 60px;
-  height: 60px;
-  background-color: #f8f9fa;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 12px;
+  @apply w-[70px] h-[70px] bg-[#C0B263] rounded-full flex items-center justify-center mb-3;
 }
 
 .icon {
-  width: 30px;
-  height: 30px;
-  color: #4CAF50;
+  @apply w-[25px] h-[25px] text-white;
 }
 
 .category-info {
-  width: 100%;
+  @apply w-full;
 }
 
 .category-name {
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 4px;
+  @apply text-base font-semibold text-gray-900 mb-1;
 }
 
 .category-count {
-  font-size: 14px;
-  color: #666;
-}
-
-.category-link {
-  color: #4CAF50;
-  text-decoration: none;
-  font-weight: 500;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 14px;
-}
-
-.category-link:hover {
-  color: #45a049;
-}
-
-.arrow-icon {
-  width: 16px;
-  height: 16px;
-  transition: transform 0.3s ease;
-}
-
-.category-link:hover .arrow-icon {
-  transform: translateX(5px);
+  @apply text-sm text-gray-600;
 }
 
 @media (max-width: 1200px) {
@@ -121,4 +63,4 @@
   .categories-grid {
     grid-template-columns: repeat(1, 1fr);
   }
-} 
+}
