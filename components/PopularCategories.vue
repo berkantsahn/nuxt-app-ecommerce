@@ -28,6 +28,8 @@
 </template>
 
 <script setup>
+import '@/assets/css/popularCategories.css'
+
 const categories = [
   {
     id: 1,
@@ -69,133 +71,5 @@ const categories = [
 </script>
 
 <style scoped>
-.popular-categories {
-  padding: 60px 20px;
-  background-color: #f8f9fa;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.section-title {
-  font-size: 32px;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 12px;
-}
-
-.section-subtitle {
-  font-size: 16px;
-  color: #666;
-}
-
-.categories-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 24px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.category-card {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  padding: 20px;
-}
-
-.category-card:hover {
-  transform: translateX(10px);
-}
-
-.category-image {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  flex-shrink: 0;
-}
-
-.category-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.category-overlay {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-
-.category-count {
-  font-size: 12px;
-  font-weight: 600;
-  color: #333;
-}
-
-.category-info {
-  flex-grow: 1;
-}
-
-.category-name {
-  font-size: 24px;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 12px;
-}
-
-.category-link {
-  color: #4CAF50;
-  text-decoration: none;
-  font-weight: 500;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 16px;
-}
-
-.category-link:hover {
-  color: #45a049;
-}
-
-.arrow-icon {
-  width: 20px;
-  height: 20px;
-  transition: transform 0.3s ease;
-}
-
-.category-link:hover .arrow-icon {
-  transform: translateX(5px);
-}
-
-@media (max-width: 768px) {
-  .category-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .category-image {
-    width: 100%;
-    height: 200px;
-  }
-
-  .category-info {
-    text-align: center;
-  }
-
-  .category-link {
-    justify-content: center;
-  }
-}
+/* CSS kodları artık assets/css/popularCategories.css dosyasında */
 </style> 

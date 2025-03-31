@@ -33,8 +33,8 @@
 </template>
 
 <script setup>
-import { menuItems } from '../datas/menuItems'
-import '../styles/components/menu.css'
+import { menuItems } from '../assets/datas/menuItems'
+import '../assets/css/menu.css'
 </script>
 
 <style scoped>

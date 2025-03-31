@@ -1,0 +1,74 @@
+.navbar-container {
+    @apply bg-white py-4 shadow-sm;
+  }
+  
+  .navbar-inner {
+    @apply container mx-auto px-4;
+  }
+  
+  .navbar-wrapper {
+    @apply flex flex-col md:flex-row items-center justify-between mt-4;
+  }
+  
+  /* Logo Bölümü */
+  .navbar-logo {
+    @apply flex items-center mb-4 md:mb-0;
+  }
+  
+  .navbar-logo-icon {
+    @apply w-12 h-12 bg-yellow-300 rounded-full flex items-center justify-center mr-3;
+  }
+  
+  .navbar-logo-svg {
+    @apply h-8 w-8 text-white;
+  }
+  
+  .navbar-logo-text {
+    @apply text-2xl font-bold text-black;
+  }
+  
+  .navbar-logo-slogan {
+    @apply text-xs text-gray-500;
+  }
+  
+  /* Arama Formu */
+  .navbar-search {
+    @apply flex-1 max-w-2xl mx-4;
+  }
+  
+  .navbar-search-form {
+    @apply flex border-[0.2px] border-teal-500 rounded-md transition-all duration-200;
+  }
+  
+  .navbar-search-input {
+    @apply w-full border-teal-500 rounded-l-md px-3 py-2 focus:outline-none focus:ring-[0.3px] focus:ring-teal-500;
+  }
+  
+  .navbar-search-select-container {
+    @apply relative border-l-[0.2px] border-teal-500;
+  }
+  
+  .navbar-search-select {
+    @apply appearance-none bg-gray-50 border-none px-3 py-2 text-gray-700 focus:outline-none hover:bg-gray-100 transition-colors duration-200 pr-8;
+  }
+  
+  .navbar-search-select-icon {
+    @apply pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500;
+  }
+  
+  .navbar-search-button {
+    @apply bg-gray-800 text-white px-4 py-2 rounded-r-md hover:bg-gray-700 focus:outline-none focus:ring-[0.3px] focus:ring-teal-500 transition-all duration-200;
+  }
+  
+  /* Kullanıcı İşlemleri */
+  .navbar-actions {
+    @apply flex items-center space-x-6;
+  }
+  
+  .navbar-action-link {
+    @apply flex items-center text-gray-700 hover:text-blue-500;
+  }
+  
+  .navbar-action-icon {
+    @apply h-6 w-6 mr-1;
+  } 

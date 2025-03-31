@@ -5,7 +5,7 @@
         <!-- Logo ve Slogan -->
         <div class="navbar-logo">
           <div class="navbar-logo-icon">
-            <img src="../images/logo.svg" alt="Foodzy Logo" class="navbar-logo-image">
+            <img src="../assets/images/logo.svg" alt="Foodzy Logo" class="navbar-logo-image">
           </div>
           <div>
             <h1 class="navbar-logo-text">Foodzy</h1>
@@ -64,5 +64,5 @@
 </template>
 
 <script setup>
-import '../styles/components/navbar.css'
+import '../assets/css/navbar.css'
 </script> 
