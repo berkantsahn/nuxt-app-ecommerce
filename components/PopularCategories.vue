@@ -1,8 +1,8 @@
 <template>
   <section class="popular-categories">
-    <div class="section-header">
-      <p class="section-subtitle">CUSTOMER FAVORITES</p>
-      <h2 class="section-title">Popular Categories</h2>
+    <div class="section-popular-categories-header">
+      <h3 class="section-popular-categories-subtitle">CUSTOMER FAVORITES</h3>
+      <h2 class="section-popular-categories-title">Popular Categories</h2>
     </div>
     
     <div class="categories-grid">

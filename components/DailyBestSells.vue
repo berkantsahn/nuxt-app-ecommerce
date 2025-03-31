@@ -1,7 +1,7 @@
 <template>
   <section class="daily-best-sells">
-    <div class="section-top">
-      <h2 class="section-title">Daily Best Sells</h2>
+    <div class="section-daily-best-sells-header">
+      <h2 class="section-daily-best-sells-title">Daily Best Sells</h2>
       <div class="category-tabs">
         <button 
           v-for="category in categories" 
@@ -20,7 +20,7 @@
       <div class="featured-product-card">
         <div class="featured-product-image-container">
           <img 
-            :src="featuredProduct.image" 
+            :src="`/images${featuredProduct.image}`" 
             :alt="featuredProduct.alt" 
             class="featured-product-image"
           />
@@ -40,7 +40,7 @@
           <div v-for="product in products" :key="product.id" class="product-card">
             <div class="best-sale-tag">{{ product.tag }}</div>
             <div class="product-image-container">
-              <img :src="product.image" :alt="product.name" class="product-image">
+              <img :src="`/images${product.image}`" :alt="product.name" class="product-image">
             </div>
             <div class="product-info">
               <div class="product-brand">{{ product.brand }}</div>

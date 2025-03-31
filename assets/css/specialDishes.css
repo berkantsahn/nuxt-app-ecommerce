@@ -1,0 +1,84 @@
+.special-dishes {
+  @apply py-8 md:py-16 bg-gray-50 max-w-[1400px] mx-auto;
+}
+
+.section-special-dishes-header {
+  @apply mb-6 md:mb-12 px-4 md:px-0 text-left;
+}
+
+.section-special-dishes-title {
+  @apply text-2xl md:text-4xl font-bold text-gray-900 mt-2;
+}
+
+.section-special-dishes-subtitle {
+  @apply text-red-500 font-semibold text-sm tracking-wider mb-2;
+}
+
+.dishes-slider {
+  @apply overflow-hidden relative mx-[-1rem];
+}
+
+.dishes-track {
+  @apply flex transition-transform duration-300 ease-in-out px-4;
+}
+
+.dish-card {
+  @apply flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-4;
+}
+
+.dish-image {
+  @apply relative rounded-t-2xl overflow-hidden mb-4 aspect-square;
+}
+
+.favorite-btn {
+  @apply absolute top-0 right-0 bg-red-500 text-white p-4 shadow-lg;
+  border-radius: 0px 17px 0px 42.5px;
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.favorite-btn svg {
+  @apply stroke-white fill-none transition-all duration-300 ease-in-out;
+}
+
+.favorite-btn:hover svg {
+  @apply fill-white transform scale-110;
+}
+
+.dish-info {
+  @apply text-center px-4 pb-6;
+}
+
+.dish-card-content {
+  @apply bg-white rounded-2xl overflow-hidden shadow-md;
+}
+
+.dish-name {
+  @apply text-xl font-semibold mb-2 text-gray-900;
+}
+
+.dish-description {
+  @apply text-gray-500 text-sm leading-relaxed;
+}
+
+.slider-nav {
+  @apply inline-flex items-center justify-center w-10 h-10 bg-white text-gray-800 rounded-full
+         hover:bg-red-500 hover:text-white transition-colors duration-300 shadow-md;
+}
+
+.prev {
+  @apply left-0 -translate-x-1/2;
+}
+
+.next {
+  @apply right-0 translate-x-1/2;
+}
+
+@media (max-width: 768px) {
+  .dish-card {
+    @apply w-full;
+  }
+  
+  .slider-nav {
+    @apply w-8 h-8;
+  }
+} 

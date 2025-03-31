@@ -5,7 +5,7 @@ export const dailyBestSellsData = {
     { id: 3, name: 'New added', isActive: false }
   ],
   featuredProduct: {
-    image: new URL('~/assets/images/banner-best-sells.png', import.meta.url).href,
+    image: '/banner-best-sells.png',
     alt: 'Featured Product'
   },
   products: [
@@ -18,7 +18,7 @@ export const dailyBestSellsData = {
       rating: 4,
       soldCount: 90,
       totalCount: 120,
-      image: new URL('~/assets/images/product-1.png', import.meta.url).href,
+      image: '/product-1.png',
       tag: 'Save 50%'
     },
     {
@@ -30,7 +30,7 @@ export const dailyBestSellsData = {
       rating: 3,
       soldCount: 90,
       totalCount: 120,
-      image: new URL('~/assets/images/product-2.png', import.meta.url).href,
+      image: '/product-2.png',
       tag: 'Best Sale'
     },
     {
@@ -42,7 +42,7 @@ export const dailyBestSellsData = {
       rating: 5,
       soldCount: 90,
       totalCount: 120,
-      image: new URL('~/assets/images/product-3.png', import.meta.url).href,
+      image: '/product-3.png',
       tag: 'Save 15%'
     },
     {
@@ -54,7 +54,7 @@ export const dailyBestSellsData = {
       rating: 2,
       soldCount: 90,
       totalCount: 120,
-      image: new URL('~/assets/images/product-4.png', import.meta.url).href,
+      image: '/product-4.png',
       tag: 'Save 30%'
     },
     {
@@ -66,7 +66,7 @@ export const dailyBestSellsData = {
       rating: 5,
       soldCount: 90,
       totalCount: 120,
-      image: new URL('~/assets/images/product-3.png', import.meta.url).href,
+      image: '/product-3.png',
       tag: 'Save 40%'
     },
     {
@@ -78,7 +78,7 @@ export const dailyBestSellsData = {
       rating: 1,
       soldCount: 90,
       totalCount: 120,
-      image: new URL('~/assets/images/product-2.png', import.meta.url).href,
+      image: '/product-2.png',
       tag: 'Save 40%'
     }
   ]

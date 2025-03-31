@@ -1,6 +1,6 @@
 <template>
   <a href="https://berkantsahin.com" target="_blank" class="photo-section">
-    <img src="../assets/images/homepage.png" alt="Berkant Şahin">
+    <img src="/public/images/homepage.png" alt="Berkant Şahin">
   </a>
 </template>
 

@@ -5,7 +5,7 @@
         <!-- Logo ve Slogan -->
         <div class="navbar-logo">
           <div class="navbar-logo-icon">
-            <img src="../assets/images/logo.svg" alt="Foodzy Logo" class="navbar-logo-image">
+            <img src="/public/images/logo.svg" alt="Foodzy Logo" class="navbar-logo-image">
           </div>
           <div>
             <h1 class="navbar-logo-text">Foodzy</h1>
