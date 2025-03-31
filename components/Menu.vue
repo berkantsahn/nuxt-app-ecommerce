@@ -33,8 +33,14 @@
 </template>
 
 <script setup>
-import { menuItems } from '../assets/datas/menuItems'
 import '../assets/css/menu.css'
+
+defineProps({
+  menuItems: {
+    type: Array,
+    required: true
+  }
+})
 </script>
 
 <style scoped>
