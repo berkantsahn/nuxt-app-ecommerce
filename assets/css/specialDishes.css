@@ -45,7 +45,7 @@
 }
 
 .dish-info {
-  @apply text-center px-4 pb-6;
+  @apply px-4 pb-6 text-left;
 }
 
 .dish-card-content {
