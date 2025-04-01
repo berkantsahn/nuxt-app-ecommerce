@@ -1,9 +1,9 @@
 .daily-best-sells {
-  @apply py-8 md:py-16 bg-gray-50 max-w-[1400px] mx-auto;
+  @apply py-8 md:py-16;
 }
 
 .section-daily-best-sells-header {
-  @apply flex justify-between items-center mb-6 md:mb-6 px-4 md:px-0;
+  @apply mb-8;
 }
 
 .section-daily-best-sells-subtitle {
@@ -15,7 +15,7 @@
 }
 
 .category-tabs {
-  @apply flex gap-6 items-center;
+  @apply flex flex-wrap gap-4 mt-4;
 }
 
 .tab-button {
@@ -27,7 +27,7 @@
 }
 
 .products-container {
-  @apply flex flex-col md:flex-row gap-4 max-w-[1400px] mx-auto px-2 md:px-4;
+  @apply flex flex-col md:flex-row gap-10;
 }
 
 /* Öne Çıkan Ürün Kartı */
@@ -97,11 +97,11 @@
 }
 
 .scroll-button.left {
-  @apply -left-4 ml-6;
+  @apply left-0;
 }
 
 .scroll-button.right {
-  @apply -right-4 mr-6;
+  @apply right-0;
 }
 
 .scroll-button.hidden {

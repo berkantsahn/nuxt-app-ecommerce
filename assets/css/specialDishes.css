@@ -1,5 +1,5 @@
 .special-dishes {
-  @apply py-8 md:py-16 bg-gray-50 max-w-[1400px] mx-auto;
+  @apply py-8 md:py-16;
 }
 
 .section-special-dishes-header {

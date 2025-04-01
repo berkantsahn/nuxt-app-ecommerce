@@ -2,7 +2,7 @@
   <section class="deals-of-day">
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between mb-8">
-        <h2 class="text-[28px] font-bold text-[#253D4E]">Deals Of The Day</h2>
+        <h2 class="section-deals-of-day-title">Deals Of The Day</h2>
         <a href="#" class="text-gray-600 hover:text-red-500 transition-colors duration-300">All Deals &gt;</a>
       </div>
 

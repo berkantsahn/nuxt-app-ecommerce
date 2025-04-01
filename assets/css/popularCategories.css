@@ -1,5 +1,5 @@
 .popular-categories {
-  @apply py-8 md:py-16 bg-gray-50 max-w-[1400px] mx-auto;
+  @apply py-8 md:py-16;
 }
 
 .section-popular-categories-header {
@@ -15,7 +15,7 @@
 }
 
 .categories-grid {
-  @apply grid gap-4 max-w-[1400px] mx-auto px-2 md:px-4;
+  @apply grid gap-4 max-w-[1550px] mx-auto px-2 md:px-4;
   grid-template-columns: repeat(5, 1fr);
 }
 
