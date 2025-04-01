@@ -3,7 +3,7 @@
 }
 
 .section-why-choose-us-title {
-  @apply text-4xl font-bold text-gray-900 mb-8 text-center;
+  @apply text-3xl font-bold mb-8 pl-28;
 }
 
 .features-grid {
