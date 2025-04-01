@@ -2,7 +2,7 @@ export const dealsOfTheDayData = {
   deals: [
     {
       id: 1,
-      title: 'Seeds of Change Organic Quinoa, Brown, & Red Rice',
+      title: 'Double Hamburger, Fries & a drink',
       image: '/deal-1.png',
       rating: 4,
       brand: 'NestFood',
@@ -11,7 +11,7 @@ export const dealsOfTheDayData = {
     },
     {
       id: 2,
-      title: 'Perdue Simply Smart Organics Gluten Free',
+      title: 'Double Hamburger with Special Bread & Sauces',
       image: '/deal-2.png',
       rating: 4,
       brand: 'Old El Paso',

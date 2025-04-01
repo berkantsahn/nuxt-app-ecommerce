@@ -178,7 +178,7 @@
 }
 
 .progress-fill {
-  @apply h-full bg-[#3BB77E] rounded-full transition-all duration-300;
+  @apply h-full bg-red-500 rounded-full transition-all duration-300;
 }
 
 .add-to-cart-btn {

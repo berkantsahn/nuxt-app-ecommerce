@@ -15,19 +15,19 @@
 }
 
 .dishes-slider {
-  @apply overflow-hidden relative mx-[-1rem];
+  @apply overflow-hidden relative;
 }
 
 .dishes-track {
-  @apply flex transition-transform duration-300 ease-in-out px-4;
+  @apply flex transition-transform duration-300 ease-in-out px-0 gap-1 px-1;
 }
 
 .dish-card {
-  @apply flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-4;
+  @apply flex-none w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-4;
 }
 
 .dish-image {
-  @apply relative rounded-t-2xl overflow-hidden mb-4 aspect-square;
+  @apply relative rounded-t-2xl overflow-hidden aspect-square mb-2;
 }
 
 .favorite-btn {
@@ -45,7 +45,7 @@
 }
 
 .dish-info {
-  @apply px-4 pb-6 text-left;
+  @apply pb-4 text-left px-4;
 }
 
 .dish-card-content {

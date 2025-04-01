@@ -1,6 +1,6 @@
 <template>
   <section class="special-dishes">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4 overflow-x-hidden">
       <div class="flex items-center justify-between mb-8">
         <div>
           <h3 class="section-special-dishes-subtitle">SPECIAL DISHES</h3>

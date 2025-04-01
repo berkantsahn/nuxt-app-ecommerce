@@ -33,7 +33,13 @@
                   <span class="text-[#3BB77E] font-bold text-lg">${{ deal.price.toFixed(2) }}</span>
                   <span class="text-gray-400 text-sm line-through">${{ deal.oldPrice.toFixed(1) }}</span>
                 </div>
-                <button class="add-btn">Add</button>
+                <button class="add-btn flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .776.319 1.485.83 2.001a.75.75 0 001.06-1.06A2.495 2.495 0 013.75 15h9.75a2.495 2.495 0 002.445-2.032A.75.75 0 0016.5 15a3.752 3.752 0 002.806-3.63l2.558-9.592a.75.75 0 00-.362-.278h1.386a.75.75 0 000-1.5H2.25zM3.75 13.5A2.25 2.25 0 016 11.25h9a2.25 2.25 0 012.25 2.25v3H3.75v-3z" />
+                  </svg>
+                  <i class="fa fa-shopping-cart" aria-hidden="true"/>
+                  Add
+                </button>
               </div>
             </div>
           </div>

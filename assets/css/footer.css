@@ -1,0 +1,61 @@
+.footer-subscribe-section {
+  @apply relative overflow-hidden bg-gradient-to-r from-[#4a4a3d] to-[#2d2d24] py-16 mx-auto max-w-[1550px] rounded-2xl mb-2; 
+}
+
+.footer-subscribe-content {
+  @apply container mx-auto px-4 flex flex-col items-start justify-center relative z-10;
+}
+
+.footer-subscribe-text {
+  @apply text-left text-white mb-8;
+}
+
+.footer-subscribe-title {
+  @apply text-4xl md:text-5xl font-bold mb-4 leading-tight;
+}
+
+.footer-subscribe-subtitle {
+  @apply text-lg text-gray-300;
+}
+
+.footer-subscribe-form {
+  @apply max-w-md w-full;
+}
+
+.footer-subscribe-input-group {
+  @apply flex items-center bg-white rounded-full p-1 pr-2;
+}
+
+.footer-subscribe-input {
+  @apply flex-1 px-4 py-2 outline-none text-gray-700 bg-transparent;
+}
+
+.footer-subscribe-button {
+  @apply bg-[#FDC040] text-white px-6 py-2 rounded-full font-medium hover:bg-[#fdb020] transition-colors duration-300;
+}
+
+.footer-subscribe-images {
+  @apply absolute inset-0 w-full h-full;
+}
+
+.footer-subscribe-images img {
+  @apply h-full w-full object-cover mx-auto opacity-20;
+}
+
+.floating-vegetable {
+  @apply absolute;
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-vegetable:nth-child(1) { top: 10%; right: 35%; }
+.floating-vegetable:nth-child(2) { top: 30%; right: 25%; }
+.floating-vegetable:nth-child(3) { top: 50%; right: 40%; }
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+} 

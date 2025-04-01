@@ -1,0 +1,27 @@
+.footer-features {
+  @apply mx-auto max-w-[1600px] p-6 -mt-8 relative z-20 mt-12 mb-2;
+}
+
+.footer-features-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-1;
+}
+
+.footer-feature-item {
+  @apply flex items-center gap-6 p-6 rounded-xl bg-[#f4f6fa] shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100;
+}
+
+.footer-feature-icon {
+  @apply text-[#FDC040] text-4xl flex-shrink-0;
+}
+
+.footer-feature-content {
+  @apply flex flex-col;
+}
+
+.footer-feature-title {
+  @apply font-semibold text-gray-900;
+}
+
+.footer-feature-description {
+  @apply text-sm text-gray-500 mt-1;
+} 

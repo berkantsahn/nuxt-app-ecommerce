@@ -1,0 +1,91 @@
+.footer-main {
+  @apply w-full bg-[#f7f7f8] border border-[#e9e9e9] pb-6 pt-16;
+}
+
+.footer-container {
+  @apply container mx-auto px-4;
+}
+
+.footer-content {
+  @apply grid grid-cols-1 md:grid-cols-4 gap-8;
+}
+
+.footer-brand {
+  @apply col-span-1;
+}
+
+.footer-logo {
+  @apply mb-4;
+}
+
+.footer-description {
+  @apply text-gray-600 mb-6;
+}
+
+.footer-address {
+  @apply flex items-start gap-2 text-gray-600 mb-3;
+}
+
+.footer-email {
+  @apply flex items-center gap-2 text-gray-600 mb-3;
+}
+
+.footer-phone {
+  @apply flex items-center gap-2 text-gray-600;
+}
+
+.footer-section {
+  @apply col-span-1;
+}
+
+.footer-section-title {
+  @apply text-lg font-semibold text-gray-900 mb-6;
+}
+
+.footer-links {
+  @apply space-y-3;
+}
+
+.footer-link {
+  @apply text-gray-600 hover:text-[#FDC040] transition-colors duration-300;
+}
+
+.footer-newsletter {
+  @apply col-span-1;
+}
+
+.footer-search {
+  @apply relative;
+}
+
+.footer-search-input {
+  @apply w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:border-[#FDC040];
+}
+
+.footer-search-button {
+  @apply absolute right-2 top-1/2 -translate-y-1/2 text-[#FDC040];
+}
+
+.footer-social {
+  @apply flex gap-4 mt-6;
+}
+
+.footer-social-link {
+  @apply text-gray-600 hover:text-[#FDC040] transition-colors duration-300;
+}
+
+.footer-gallery {
+  @apply grid grid-cols-5 gap-1 mt-6;
+}
+
+.footer-gallery-item {
+  @apply rounded-lg overflow-hidden;
+}
+
+.footer-gallery-image {
+  @apply w-full h-14 object-cover;
+}
+
+.footer-copyright {
+  @apply text-center text-gray-600 mt-2 pt-8 border-t;
+} 

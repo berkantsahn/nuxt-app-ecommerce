@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/image',
+    'nuxt-icon'
   ],
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
@@ -16,6 +17,15 @@ export default defineNuxtConfig({
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
+    }
+  },
+  app: {
+    head: {
+      title: 'Nuxt Landing Page',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      ]
     }
   }
 })
